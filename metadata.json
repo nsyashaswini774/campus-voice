@@ -1,0 +1,6 @@
+{
+  "name": "Campus Voice",
+  "description": "Campus Voice — One campus. One voice. Stay updated with the latest campus announcements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

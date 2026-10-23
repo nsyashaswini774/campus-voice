@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --color-lavender: #a78bfa;
+  --color-purple: #7c6ae8;
+  --color-coral: #ff8177;
+  --color-yellow: #ffd66b;
+  --color-skyblue: #83c9f4;
+  --color-mint: #a8e6cf;
+  --color-warm-white: #fffcf8;
+  --color-navy: #202544;
+  --color-border-soft: #e8e8f2;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--color-warm-white);
+  color: var(--color-navy);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  color: var(--color-navy);
+}
+
+/* Tasteful, subtle elevation */
+.card-soft {
+  background: #ffffff;
+  border: 1px solid #e8e8f2;
+  box-shadow: 0 4px 20px -2px rgba(32, 37, 68, 0.04), 0 2px 6px -1px rgba(32, 37, 68, 0.02);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.card-soft:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -4px rgba(32, 37, 68, 0.08), 0 4px 12px -2px rgba(32, 37, 68, 0.04);
+  border-color: #d8d8ea;
+}
+
+/* Cute button micro-interactions */
+.btn-pill {
+  border-radius: 9999px;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-pill:hover {
+  transform: translateY(-1px);
+}
+
+.btn-pill:active {
+  transform: scale(0.98);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d8ea;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a78bfa;
+}
